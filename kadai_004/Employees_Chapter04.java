@@ -14,7 +14,7 @@ public class Employees_Chapter04 {
             con = DriverManager.getConnection(
                     "jdbc:mysql://localhost/challenge_java",
                     "root",
-                    "YukiKietuki56"
+                    "pass"
             );
 
             System.out.println("データベース接続成功");
