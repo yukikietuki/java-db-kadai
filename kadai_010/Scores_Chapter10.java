@@ -24,7 +24,7 @@ public class Scores_Chapter10 {
 
             // SQLクエリを準備
             statement = con.createStatement();
-            String sql = "UPDATE scores SET score_math = '95', score_english = '80' WHERE name = '武者小路勇気';";
+            String sql = "UPDATE scores SET score_math = 95, score_english = 80 WHERE id = 5 ;";
 
 
             // SQLクエリを実行（DBMSに送信）
