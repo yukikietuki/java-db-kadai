@@ -2,7 +2,6 @@ package kadai_010;
 
 import java.sql.*;
 
-import static com.mysql.cj.x.protobuf.MysqlxCrud.Order.Direction.DESC;
 
 public class Scores_Chapter10 {
 
@@ -30,12 +29,11 @@ public class Scores_Chapter10 {
             // SQLクエリを実行（DBMSに送信）
             System.out.println("レコード追加:" + statement.toString());
             int rowCnt = statement.executeUpdate(sql);
-            System.out.println(rowCnt + "件のレコードが追加されました");
+            System.out.println(rowCnt + "件のレコードが更新されました");
 
 
             //並び変え
             // SQLクエリを準備
-            statement = con.createStatement();
             String sql2 = "SELECT * FROM scores ORDER BY score_math DESC, score_english DESC";
 
             // SQLクエリを実行（DBMSに送信）
